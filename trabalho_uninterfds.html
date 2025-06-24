@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+    body{ 
+                
+               
+                background-color:rgb(212, 227, 230);
+            }
+
+             h1{
+                color:rgb(94, 132, 145);
+                text-align:center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h2{
+                 color:rgb(187, 130, 7);
+                 text-align: center;
+                 font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+                text-indent: 20px;
+            }
+            h2{
+               font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                text-indent: 20px;
+            }
+            ul{
+               font-family: Arial, Helvetica, sans-serif;
+                display:inline-block;
+            }
+            .container-grid{
+                display:grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 40px;
+                align-items:start;
+                width:70%;
+                height:370px;
+                margin:40px
+            }
+            .container-grid img{
+                width:100%;
+                height: 60%;
+                
+            }
+            #img_redonda{
+            border-radius:05%
+            }
+            img{
+                width: 20%;
+                height: 30%;
+                object-fit: cover;
+            }
+            #img_tabela{
+                width: 100%;
+                height: 100%;
+                border-radius:05%
+            }
+            .quadrado_imagem{
+                border: 0px solid rgb(212, 227, 230);
+                width: 400px;
+                height: 600px;
+                position: absolute;
+                right: 0px;
+                top: 127px;
+            }
+            .link:hover{
+                background-color:rgb(225, 173, 61); 
+            }
+         
+            table{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 60px;
+                color:rgb(187, 130, 7); ;
+            }
+            td{  text-align:center;
+                 border: 10px solid rgb(4, 106, 117);
+                width: 500px;
+                height: 500px;
+                padding: 10px;
+                 border-radius:05%
+            }
+            #td1{
+                 width: 500px;
+                height: 10px;
+                 border: 10px solid  rgb(4, 106, 117);
+                 padding: 10px;
+                  text-align:center;
+                   border-radius:05%
+            }
+ 
+            h3{
+                 text-align: center;
+                text-indent: 20px;
+          
+            }
+            
+            
+
+            
+
+</style>
+ <head> 
+        <meta charset="utf-8">
+       
+        <title> Trabalho_FDS</title>
+       <!-- <link rel="stylesheet"  href="styles.css/trabalho_uninterfds.css">
+        --> 
+        
+ </head>
+        <body>
+            <h1> Cleber Rangel</h1>
+            <h2>Ola, sejam todos  bem-vindos!</h2>
+
+             <div class="quadrado_imagem">
+                <img id="img_tabela" class="img" src="imagens/imagem14.jpg"  />
+            </div>
+           
+            <div class="container-grid">
+                <img  id="img_redonda" class="img" src="imagens/imagem10.jpg"  alt="estou na praça"/>
+            <div class="texto-grid">
+
+            
+            <p>Meu nome é  Cleber Rangel, tenho 37 anos <br>sou brasileiro e moro na cidade de São Paulo.</p>
+            <p>
+                Possuo formaçao profissional em diversas <br>areas 
+            da engenharia civil e segurança patrimonial.
+            </p>
+            <p>
+                Porem hoje estou em busca de uma transição <br>de carreira para area de tecnoogia que é 
+                uma <br>das areas que possuo interesse.
+            </p>
+            <p>
+                Durante minha adolecencia fui atleta profissional <br>de basquetebol e
+                com o passar dos anos o esporte <br>se tornou apenas um robbie
+            que gosto muito <br>de praticar em meu tempo livre.
+            </p>
+              
+             </div>
+            </div>
+            
+            <h2>Meus robbies favoritos são:</h2>
+               
+               <ul>
+                <li>
+                    <img  id="img_redonda" class="img"src="imagens/imagem11.jpg" 
+                    alt="jogando basquetebol"> &nbsp;&nbsp;Jogar Basquetebol:
+                    <a class="link" href="https://www.espn.com.br/nba/calendario" title="Veja um pouco mais deste esporte fantastico!"
+                 target="_blank"> 
+                    Confira os resultados das finais da NBA 2025 na ESPN.</a>
+                </li>
+                    <br>
+                    <br>
+                <li>
+                    <img  id="img_redonda" class="img"src="imagens/imagem08.jpg" width="300px" />&nbsp;&nbsp;Viajar.
+                </li>
+                    <br>
+                    <br>
+                <li>
+                    <img  id="img_redonda" class="img"src="imagens/imagem06.jpg" width="300px" />&nbsp;&nbsp;Tirar fotos.
+                </li>
+
+               </ul>
+
+               <h2>Paises que quero muito visitar:</h2>
+
+              <h3>
+                  <button align:center; onclick="carConteudo()" > Clique e veja uma menssagem inspiradora</button>
+                  <span id="conteudo"></span> 
+                  <script  src="mensagem.js"></script>
+              </h3> 
+
+               <br>
+               <br>
+               <br>
+               <br>  
+
+              <table>
+                <tr>   
+                    <td id="td1" class="text-align">Indonesia</td>
+                    <td><img id="img_tabela" class="img" src="imagens/indonesia.jpg" width="auto" /></td>
+                    
+                </tr>
+
+                <tr>
+                   <!-- <td><img id="img_tabela" class="img" src="imagens/indonesia.jpg" width="auto" /></td>-->
+                     <td id="td1" class="text-align">Estados Unidos</td>
+                     <td><img id="img_tabela" class="img" src="imagens/estados_unidos.jpg" width="auto"/></td>
+                </tr> 
+                
+                <tr>
+                    <td id="td1" class="text-align">Africa</td>
+                    <td><img id="img_tabela" class="img" src="imagens/africa.jpg" width="auto"/></td>
+                </tr>
+               
+            </table>
+            
+        </body>
+     <td id="td1" class="text-align">Estados Unidos</td>
+</html>
